@@ -2,13 +2,15 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: k8s-ingress
+  annotations:
+    load-balance: roundrobin
 spec:
   ingressClassName: haproxy
   rules:
-  - host: "pfe.example.com"
-    http:
+  #- host: "pfe.example.com"
+  - http:
       paths:
-      - path: /
+      - path: /open5g-gui
         pathType: Prefix
         backend:
           service:
