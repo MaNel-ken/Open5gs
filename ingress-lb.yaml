@@ -5,13 +5,13 @@ metadata:
 spec:
   ingressClassName: haproxy
   rules:
-  - host: "example.com"
+  - host: "pfe.example.com"
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: example-service
+            name: open-webui
             port:
-              number: 8080
+              number: 80
