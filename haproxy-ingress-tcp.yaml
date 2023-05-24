@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: haproxy-ingress-tcp
+  namespace: ingress-haproxy
+data:
+  30412: "open5gs/amf-open5gs-sctp:38412"
