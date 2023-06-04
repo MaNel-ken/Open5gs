@@ -1,4 +1,4 @@
-  GNU nano 4.8                                                          ingress-lb.yaml                                                                     apiVersion: networking.k8s.io/v1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: k8s-ingress
